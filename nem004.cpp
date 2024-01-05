@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-float trung_binh(int s[], int n) {
-    int b = 0;
+float trung_binh(int a[], int n) {
+    int b = n;
     for (int i = 0; i < n; i++) {
-        b += s[i];
+        b += a[i];
     }
     return (float)b / n;
 }
@@ -14,13 +14,14 @@ int main() {
     
 
     int arr[n];
-    printf("Nhap cac gia tri cua mang la:\n ");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    float ketqua =trung_binh (arr, n);
+    for(int i=0;i<n;i++){
+    printf("Nhap cac gia tri cua mang la:\n",n);
+    scanf("%d",&arr[i]); 
+}
+
+    float ketqua =trung_binh (arr,n);
     printf("So nguyen trung binh cua mang la: %.2f\n", ketqua);
     
-    
+
     return 0;
 }

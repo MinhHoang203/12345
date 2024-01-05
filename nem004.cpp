@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-float trung_binh(int a[], int n) {
+float trung_binh(int s[], int n) {
     int b = n;
     for (int i = 0; i < n; i++) {
-        b += a[i];
+        b += s[i];
     }
     return (float)b / n;
 }
